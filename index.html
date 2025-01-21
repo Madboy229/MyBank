@@ -7,6 +7,37 @@
 	<title>loging page</title>
 </head>
 <body>
-
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4" style="max-width: 400px; width: 100%;">
+          <div id="logo-container" class="text-center mb-3">
+            <img src="img/logo-MyBank.webp" alt="logo-MyBank" class="logo">
+          </div>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+              </div>
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="termsCheck" />
+              <label for="termsCheck" class="form-check-label"> I agree to the <a href="https://www.img.banquepopulaire.fr/app/uploads/sites/19/2021/04/22133639/conditions-fonctionnement-compte-a-terme-ordinaire2013-2.pdf">Terms and Conditions</a>
+              </label>
+            </div>
+            <button type="button" class="btn btn-primary w-100">Login <a href="account.html"></a> </button>
+            <div class="text-center mt-3">
+              <a href="#">Forgot Password</a> | <a href="#">Support</a>
+            </div>
+          </form>
+        </div>
+      </div>      
 </body>
 </html>

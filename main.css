@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+/* Centrage vertical avec flexbox */
+.container {
+    height: 100vh;
+}
+
+/*le logo */
+#logo-container {
+    margin-bottom: 1.5rem; /* Espace entre le logo et le formulaire */
+}
+  
+#logo-container .logo {
+    max-width: 150px; /* Largeur maximale du logo */
+    height: auto; /* Conserve le ratio d'aspect du logo */
+    display: inline-block; /* Aligne le logo au centre */
+}
+
+
+/* Le formulaire */
+.card {
+    background-color: #fff;
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+  
+  /* Input group */
+.input-group-text {
+    background-color: #e9ecef;
+    border: 2px solid #ced4da;
+    color: #6c757d;
+}
+  
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0 0.25rem 0.25rem 0; 
+}
+  
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+  
+/* Bouton login */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+  
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.25);
+}
+  
+/* Checkbox */
+.form-check-input {
+    accent-color: #007bff;
+}
+  
+/* Liens en bleu*/
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+/* Logo */
+#logo-container {
+    height: 50px;
+    background: url('logo.png') no-repeat center center;
+    background-size: contain;
+}
+  
+/* Textes au milieu */
+.text-center {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+  
+/* Espacements des trucs  */
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+  
+.mt-3 {
+    margin-top: 1rem !important;
+}
+  
