@@ -4,9 +4,43 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="account.css">
-	<title>account page</title>
+	<title>Account Page</title>
 </head>
 <body>
-
+    <div class="container">
+        <h1>Manage Expenses</h1>
+        <div class="form-container">
+            <form id="expenseForm">
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <!-- Categories will be populated here -->
+                    </select>
+                </div>
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+        <div class="filter-container">
+            <label for="filterCategory">Filter by Category</label>
+            <select id="filterCategory">
+                <!-- Categories will be populated here -->
+            </select>
+        </div>
+        <div class="expenses-container">
+            <h2>Expenses</h2>
+            <ul id="expensesList">
+                <!-- Expenses will be listed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="account.js"></script>
 </body>
 </html>
